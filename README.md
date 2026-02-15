@@ -8,14 +8,14 @@ Simulate an upgrade by showing the packages that will be upgraded and saving thi
 Print out the contents of all three files. You can use the cat command to print the contents of a file.
 
 UNIT 2 User Management
-Task 2: In this task, you will analyze a script that performs user management. This script:
+Task 2: Write a script that performs user management. This script:
 Prints the list of users to users.txt
 Shows the current user, their home directory, and shell.
 Adds a new user named and sets up their home directory.
 Switches to the new user and shows their environment details.
 Run the script to observe the output of creating a new user. 
 
-Task 3: Your task is to write a shell script that:
+Task 3: Write a shell script that:
 Create and add two new users named Cosmo and Nova.
 User Cosmo should have the home directory path $PWD/users/spaceship.
 User Nova should have the home directory path $PWD/users/galaxy.
@@ -23,9 +23,14 @@ Hint: You can use -d pathname to set the user's homedir
 Print the relevant entries for both users from the /etc/passwd file to verify their creation.
 List the users folder to show the homedirs
 
-Task 4: In this task, you will run a script that uses the df and du commands to check disk usage. Here is what the script does:
+Task 4: Write a script that uses the df and du commands to check disk usage. Here is what the script does:
 It monitors a directory named /tmp.
 Uses the df command to show disk space usage of the filesystem.
 Uses the du command to display disk usage of files and directories.
 Creates a large file and rechecks disk usage statistics.
 Run the script to see how it gathers and displays disk usage info.
+
+Task 5: Create and automate a shell script that checks disk usage daily and appends this information to a log file. You will utilize cron jobs to schedule the script to run automatically every weekday at 9 A.M. Follow the TODO comments to correctly schedule the check_usage.sh file.
+In check_usage.sh, append the following to the output file:
+The current date
+Human readable disk usage statistics for the CWD (use df)
