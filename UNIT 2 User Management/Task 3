@@ -1,0 +1,24 @@
+#!/bin/bash 
+
+# Create main users directory
+mkdir -p users
+
+# Define home directories
+cosmo_home="$PWD/users/spaceship"
+nova_home="$PWD/users/galaxy"
+
+# Create user Cosmo with custom home directory
+sudo useradd -m -d "$cosmo_home" Cosmo
+
+# Create user Nova with custom home directory
+sudo useradd -m -d "$nova_home" Nova
+
+# Print relevant entries from /etc/passwd
+echo "User entries from /etc/passwd:"
+grep -E "^(Cosmo|Nova):" /etc/passwd
+
+echo
+echo "Listing users directory (home directories):"
+
+# List the users folder
+ls -l users

@@ -1,0 +1,1 @@
+create and automate a shell script that checks disk usage daily and appends this information to a log file. You will utilize cron jobs to schedule the script to run automatically every weekday at 9 A.M. Follow the TODO comments to correctly schedule the check_usage.sh file.
