@@ -23,6 +23,7 @@ Hint: You can use -d pathname to set the user's homedir
 Print the relevant entries for both users from the /etc/passwd file to verify their creation.
 List the users folder to show the homedirs
 
+UNIT 3 Disk Usage Monitoring
 Task 4: Write a script that uses the df and du commands to check disk usage. Here is what the script does:
 It monitors a directory named /tmp.
 Uses the df command to show disk space usage of the filesystem.
@@ -30,6 +31,7 @@ Uses the du command to display disk usage of files and directories.
 Creates a large file and rechecks disk usage statistics.
 Run the script to see how it gathers and displays disk usage info.
 
+UNIT 4 Scheduling Tasks with Cron
 Task 5: Create and automate a shell script that checks disk usage daily and appends this information to a log file. You will utilize cron jobs to schedule the script to run automatically every weekday at 9 A.M. Follow the TODO comments to correctly schedule the check_usage.sh file.
 In check_usage.sh, append the following to the output file:
 The current date
