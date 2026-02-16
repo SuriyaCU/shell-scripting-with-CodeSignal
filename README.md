@@ -5,7 +5,7 @@ This repository contains shell scripting tasks organized by units for practicing
 
 ---
 
-## 📦 UNIT 1: Package Management
+##  UNIT 1: Package Management
 
 ### Task 1
 Write a shell script from scratch. The script should:
@@ -17,7 +17,7 @@ Write a shell script from scratch. The script should:
 
 ---
 
-## 👤 UNIT 2: User Management
+##  UNIT 2: User Management
 
 ### Task 2
 Write a script that:
@@ -43,7 +43,7 @@ Write a shell script that:
 
 ---
 
-## 💽 UNIT 3: Disk Usage Monitoring
+##  UNIT 3: Disk Usage Monitoring
 
 ### Task 4
 Write a script that:
@@ -57,7 +57,7 @@ Write a script that:
 
 ---
 
-## ⏰ UNIT 4: Scheduling Tasks with Cron
+##  UNIT 4: Scheduling Tasks with Cron
 
 ### Task 5
 Create and automate a script using `cron` that:
@@ -71,7 +71,7 @@ Create and automate a script using `cron` that:
 
 ---
 
-## 💾 UNIT 5: Automating Backups
+##  UNIT 5: Automating Backups
 
 ### Task 6
 Write an automated backup script.
@@ -95,6 +95,7 @@ Write a script that:
 
 ---
 
-## ✅ Author
+##  Author
 Suriya C U
+
 Shell scripting practice for CodeSignal – System Automation Course
