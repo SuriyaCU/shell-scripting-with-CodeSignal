@@ -36,3 +36,10 @@ Task 5: Create and automate a shell script that checks disk usage daily and appe
 In check_usage.sh, append the following to the output file:
 The current date
 Human readable disk usage statistics for the CWD (use df)
+
+UNIT 5 Automating Backups
+Task 6: Write a automatong backup script
+Task 7: Create two directories named data and logs. Add two sample text files to each: d1.txt and d2.txt in data with the contents "File D1" and "File D2," respectively. In logs, create l1.log and l2.log with the contents "Log L1" and "Log L2," respectively.
+Define the source directories and create a backup directory for each with a timestamp.
+Copy all files from each source directory to their respective backup directories.
+List the contents of the backups directory.
