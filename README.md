@@ -96,4 +96,5 @@ Write a script that:
 ---
 
 ## ✅ Author
+Suriya C U
 Shell scripting practice for CodeSignal – System Automation Course
