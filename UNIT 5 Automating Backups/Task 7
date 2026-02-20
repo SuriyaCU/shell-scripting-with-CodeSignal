@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Create directories
+mkdir -p data logs backups
+
+# Create files in data directory
+echo "File D1" > data/d1.txt
+echo "File D2" > data/d2.txt
+
+# Create files in logs directory
+echo "Log L1" > logs/l1.log
+echo "Log L2" > logs/l2.log
+
+# Define source directories
+data_source="$(pwd)/data"
+logs_source="$(pwd)/logs"
+
+# Create timestamp (no underscore, as requested)
+timestamp=$(date '+%Y-%m-%d%H-%M-%S')
+
+# Create backup directories
+data_backup="$(pwd)/backups/data_$timestamp"
+logs_backup="$(pwd)/backups/logs_$timestamp"
+
+mkdir -p "$data_backup" "$logs_backup"
+
+# Copy files to backup directories
+cp -r "$data_source"/* "$data_backup"/
+cp -r "$logs_source"/* "$logs_backup"/
+
+# Display success message
+echo "Backup completed successfully."
+
+# List contents of backups directory
+ls backups/
