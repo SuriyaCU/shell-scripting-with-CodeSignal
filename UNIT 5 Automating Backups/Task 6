@@ -1,0 +1,10 @@
+#!/bin/bash
+# Script to automate backups
+
+source_dir="$(pwd)/data"
+backup_dir="$(pwd)/backups/data_$(date '+%Y-%m-%d_%H-%M-%S')"
+
+mkdir -p $backup_dir
+cp -r $source_dir/* $backup_dir/
+echo "Backup completed: $backup_dir"
+ls backups/
